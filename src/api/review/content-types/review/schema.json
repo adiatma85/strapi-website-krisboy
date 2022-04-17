@@ -14,13 +14,11 @@
   "attributes": {
     "title": {
       "type": "string",
-      "regex": "/^[A-Za-z]+$/",
       "required": true,
       "unique": true
     },
     "gadget_name": {
       "type": "string",
-      "regex": "/^[A-Za-z]+$/",
       "required": true
     },
     "overview_description": {
@@ -103,6 +101,16 @@
       "relation": "manyToMany",
       "target": "api::tag.tag",
       "inversedBy": "reviews"
+    },
+    "title_slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "recommendations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::recommendation.recommendation",
+      "mappedBy": "reviews"
     }
   }
 }

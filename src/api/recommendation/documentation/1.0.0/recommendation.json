@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/tags": {
+    "/recommendations": {
       "get": {
         "responses": {
           "200": {
@@ -20,7 +20,7 @@
                           "attributes": {
                             "type": "object",
                             "properties": {
-                              "reviews": {
+                              "tags": {
                                 "type": "object",
                                 "properties": {
                                   "data": {
@@ -34,68 +34,7 @@
                                         "attributes": {
                                           "type": "object",
                                           "properties": {
-                                            "title": {
-                                              "type": "string"
-                                            },
-                                            "gadget_name": {
-                                              "type": "string"
-                                            },
-                                            "overview_description": {
-                                              "type": "string"
-                                            },
-                                            "desain_description": {
-                                              "type": "string"
-                                            },
-                                            "performa_description": {
-                                              "type": "string"
-                                            },
-                                            "layar_description": {
-                                              "type": "string"
-                                            },
-                                            "baterai_description": {
-                                              "type": "string"
-                                            },
-                                            "konektivitas_description": {
-                                              "type": "string"
-                                            },
-                                            "kesimpulan_description": {
-                                              "type": "string"
-                                            },
-                                            "price": {
-                                              "type": "number",
-                                              "format": "float"
-                                            },
-                                            "shopee_links": {
-                                              "type": "string"
-                                            },
-                                            "another_links": {
-                                              "type": "string"
-                                            },
-                                            "rating_description": {
-                                              "type": "string"
-                                            },
-                                            "pros": {
-                                              "type": "string"
-                                            },
-                                            "cons": {
-                                              "type": "string"
-                                            },
-                                            "rating_desain": {
-                                              "type": "integer"
-                                            },
-                                            "rating_performa": {
-                                              "type": "integer"
-                                            },
-                                            "rating_layar": {
-                                              "type": "integer"
-                                            },
-                                            "rating_konektivitas": {
-                                              "type": "integer"
-                                            },
-                                            "rating_penyimpanan": {
-                                              "type": "integer"
-                                            },
-                                            "tags": {
+                                            "reviews": {
                                               "type": "object",
                                               "properties": {
                                                 "data": {
@@ -109,7 +48,68 @@
                                                       "attributes": {
                                                         "type": "object",
                                                         "properties": {
-                                                          "reviews": {
+                                                          "title": {
+                                                            "type": "string"
+                                                          },
+                                                          "gadget_name": {
+                                                            "type": "string"
+                                                          },
+                                                          "overview_description": {
+                                                            "type": "string"
+                                                          },
+                                                          "desain_description": {
+                                                            "type": "string"
+                                                          },
+                                                          "performa_description": {
+                                                            "type": "string"
+                                                          },
+                                                          "layar_description": {
+                                                            "type": "string"
+                                                          },
+                                                          "baterai_description": {
+                                                            "type": "string"
+                                                          },
+                                                          "konektivitas_description": {
+                                                            "type": "string"
+                                                          },
+                                                          "kesimpulan_description": {
+                                                            "type": "string"
+                                                          },
+                                                          "price": {
+                                                            "type": "number",
+                                                            "format": "float"
+                                                          },
+                                                          "shopee_links": {
+                                                            "type": "string"
+                                                          },
+                                                          "another_links": {
+                                                            "type": "string"
+                                                          },
+                                                          "rating_description": {
+                                                            "type": "string"
+                                                          },
+                                                          "pros": {
+                                                            "type": "string"
+                                                          },
+                                                          "cons": {
+                                                            "type": "string"
+                                                          },
+                                                          "rating_desain": {
+                                                            "type": "integer"
+                                                          },
+                                                          "rating_performa": {
+                                                            "type": "integer"
+                                                          },
+                                                          "rating_layar": {
+                                                            "type": "integer"
+                                                          },
+                                                          "rating_konektivitas": {
+                                                            "type": "integer"
+                                                          },
+                                                          "rating_penyimpanan": {
+                                                            "type": "integer"
+                                                          },
+                                                          "tags": {
                                                             "type": "object",
                                                             "properties": {
                                                               "data": {
@@ -129,7 +129,7 @@
                                                               }
                                                             }
                                                           },
-                                                          "name": {
+                                                          "title_slug": {
                                                             "type": "string"
                                                           },
                                                           "recommendations": {
@@ -549,7 +549,7 @@
                                                 }
                                               }
                                             },
-                                            "title_slug": {
+                                            "name": {
                                               "type": "string"
                                             },
                                             "recommendations": {
@@ -625,10 +625,7 @@
                                   }
                                 }
                               },
-                              "name": {
-                                "type": "string"
-                              },
-                              "recommendations": {
+                              "reviews": {
                                 "type": "object",
                                 "properties": {
                                   "data": {
@@ -647,6 +644,12 @@
                                     }
                                   }
                                 }
+                              },
+                              "title": {
+                                "type": "string"
+                              },
+                              "title_slug": {
+                                "type": "string"
                               },
                               "createdAt": {
                                 "type": "string",
@@ -874,7 +877,7 @@
           }
         },
         "tags": [
-          "Tag"
+          "Recommendation"
         ],
         "parameters": [
           {
@@ -958,7 +961,7 @@
             }
           }
         ],
-        "operationId": "get/tags"
+        "operationId": "get/recommendations"
       },
       "post": {
         "responses": {
@@ -977,7 +980,7 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "reviews": {
+                            "tags": {
                               "type": "object",
                               "properties": {
                                 "data": {
@@ -991,68 +994,7 @@
                                       "attributes": {
                                         "type": "object",
                                         "properties": {
-                                          "title": {
-                                            "type": "string"
-                                          },
-                                          "gadget_name": {
-                                            "type": "string"
-                                          },
-                                          "overview_description": {
-                                            "type": "string"
-                                          },
-                                          "desain_description": {
-                                            "type": "string"
-                                          },
-                                          "performa_description": {
-                                            "type": "string"
-                                          },
-                                          "layar_description": {
-                                            "type": "string"
-                                          },
-                                          "baterai_description": {
-                                            "type": "string"
-                                          },
-                                          "konektivitas_description": {
-                                            "type": "string"
-                                          },
-                                          "kesimpulan_description": {
-                                            "type": "string"
-                                          },
-                                          "price": {
-                                            "type": "number",
-                                            "format": "float"
-                                          },
-                                          "shopee_links": {
-                                            "type": "string"
-                                          },
-                                          "another_links": {
-                                            "type": "string"
-                                          },
-                                          "rating_description": {
-                                            "type": "string"
-                                          },
-                                          "pros": {
-                                            "type": "string"
-                                          },
-                                          "cons": {
-                                            "type": "string"
-                                          },
-                                          "rating_desain": {
-                                            "type": "integer"
-                                          },
-                                          "rating_performa": {
-                                            "type": "integer"
-                                          },
-                                          "rating_layar": {
-                                            "type": "integer"
-                                          },
-                                          "rating_konektivitas": {
-                                            "type": "integer"
-                                          },
-                                          "rating_penyimpanan": {
-                                            "type": "integer"
-                                          },
-                                          "tags": {
+                                          "reviews": {
                                             "type": "object",
                                             "properties": {
                                               "data": {
@@ -1066,7 +1008,68 @@
                                                     "attributes": {
                                                       "type": "object",
                                                       "properties": {
-                                                        "reviews": {
+                                                        "title": {
+                                                          "type": "string"
+                                                        },
+                                                        "gadget_name": {
+                                                          "type": "string"
+                                                        },
+                                                        "overview_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "desain_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "performa_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "layar_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "baterai_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "konektivitas_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "kesimpulan_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "price": {
+                                                          "type": "number",
+                                                          "format": "float"
+                                                        },
+                                                        "shopee_links": {
+                                                          "type": "string"
+                                                        },
+                                                        "another_links": {
+                                                          "type": "string"
+                                                        },
+                                                        "rating_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "pros": {
+                                                          "type": "string"
+                                                        },
+                                                        "cons": {
+                                                          "type": "string"
+                                                        },
+                                                        "rating_desain": {
+                                                          "type": "integer"
+                                                        },
+                                                        "rating_performa": {
+                                                          "type": "integer"
+                                                        },
+                                                        "rating_layar": {
+                                                          "type": "integer"
+                                                        },
+                                                        "rating_konektivitas": {
+                                                          "type": "integer"
+                                                        },
+                                                        "rating_penyimpanan": {
+                                                          "type": "integer"
+                                                        },
+                                                        "tags": {
                                                           "type": "object",
                                                           "properties": {
                                                             "data": {
@@ -1086,7 +1089,7 @@
                                                             }
                                                           }
                                                         },
-                                                        "name": {
+                                                        "title_slug": {
                                                           "type": "string"
                                                         },
                                                         "recommendations": {
@@ -1506,7 +1509,7 @@
                                               }
                                             }
                                           },
-                                          "title_slug": {
+                                          "name": {
                                             "type": "string"
                                           },
                                           "recommendations": {
@@ -1582,10 +1585,7 @@
                                 }
                               }
                             },
-                            "name": {
-                              "type": "string"
-                            },
-                            "recommendations": {
+                            "reviews": {
                               "type": "object",
                               "properties": {
                                 "data": {
@@ -1604,6 +1604,12 @@
                                   }
                                 }
                               }
+                            },
+                            "title": {
+                              "type": "string"
+                            },
+                            "title_slug": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -1810,10 +1816,10 @@
           }
         },
         "tags": [
-          "Tag"
+          "Recommendation"
         ],
         "parameters": [],
-        "operationId": "post/tags",
+        "operationId": "post/recommendations",
         "requestBody": {
           "required": true,
           "content": {
@@ -1823,7 +1829,7 @@
                   "data": {
                     "type": "object",
                     "properties": {
-                      "name": {
+                      "title": {
                         "type": "string"
                       }
                     }
@@ -1835,7 +1841,7 @@
         }
       }
     },
-    "/tags/{id}": {
+    "/recommendations/{id}": {
       "get": {
         "responses": {
           "200": {
@@ -1853,7 +1859,7 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "reviews": {
+                            "tags": {
                               "type": "object",
                               "properties": {
                                 "data": {
@@ -1867,68 +1873,7 @@
                                       "attributes": {
                                         "type": "object",
                                         "properties": {
-                                          "title": {
-                                            "type": "string"
-                                          },
-                                          "gadget_name": {
-                                            "type": "string"
-                                          },
-                                          "overview_description": {
-                                            "type": "string"
-                                          },
-                                          "desain_description": {
-                                            "type": "string"
-                                          },
-                                          "performa_description": {
-                                            "type": "string"
-                                          },
-                                          "layar_description": {
-                                            "type": "string"
-                                          },
-                                          "baterai_description": {
-                                            "type": "string"
-                                          },
-                                          "konektivitas_description": {
-                                            "type": "string"
-                                          },
-                                          "kesimpulan_description": {
-                                            "type": "string"
-                                          },
-                                          "price": {
-                                            "type": "number",
-                                            "format": "float"
-                                          },
-                                          "shopee_links": {
-                                            "type": "string"
-                                          },
-                                          "another_links": {
-                                            "type": "string"
-                                          },
-                                          "rating_description": {
-                                            "type": "string"
-                                          },
-                                          "pros": {
-                                            "type": "string"
-                                          },
-                                          "cons": {
-                                            "type": "string"
-                                          },
-                                          "rating_desain": {
-                                            "type": "integer"
-                                          },
-                                          "rating_performa": {
-                                            "type": "integer"
-                                          },
-                                          "rating_layar": {
-                                            "type": "integer"
-                                          },
-                                          "rating_konektivitas": {
-                                            "type": "integer"
-                                          },
-                                          "rating_penyimpanan": {
-                                            "type": "integer"
-                                          },
-                                          "tags": {
+                                          "reviews": {
                                             "type": "object",
                                             "properties": {
                                               "data": {
@@ -1942,7 +1887,68 @@
                                                     "attributes": {
                                                       "type": "object",
                                                       "properties": {
-                                                        "reviews": {
+                                                        "title": {
+                                                          "type": "string"
+                                                        },
+                                                        "gadget_name": {
+                                                          "type": "string"
+                                                        },
+                                                        "overview_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "desain_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "performa_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "layar_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "baterai_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "konektivitas_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "kesimpulan_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "price": {
+                                                          "type": "number",
+                                                          "format": "float"
+                                                        },
+                                                        "shopee_links": {
+                                                          "type": "string"
+                                                        },
+                                                        "another_links": {
+                                                          "type": "string"
+                                                        },
+                                                        "rating_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "pros": {
+                                                          "type": "string"
+                                                        },
+                                                        "cons": {
+                                                          "type": "string"
+                                                        },
+                                                        "rating_desain": {
+                                                          "type": "integer"
+                                                        },
+                                                        "rating_performa": {
+                                                          "type": "integer"
+                                                        },
+                                                        "rating_layar": {
+                                                          "type": "integer"
+                                                        },
+                                                        "rating_konektivitas": {
+                                                          "type": "integer"
+                                                        },
+                                                        "rating_penyimpanan": {
+                                                          "type": "integer"
+                                                        },
+                                                        "tags": {
                                                           "type": "object",
                                                           "properties": {
                                                             "data": {
@@ -1962,7 +1968,7 @@
                                                             }
                                                           }
                                                         },
-                                                        "name": {
+                                                        "title_slug": {
                                                           "type": "string"
                                                         },
                                                         "recommendations": {
@@ -2382,7 +2388,7 @@
                                               }
                                             }
                                           },
-                                          "title_slug": {
+                                          "name": {
                                             "type": "string"
                                           },
                                           "recommendations": {
@@ -2458,10 +2464,7 @@
                                 }
                               }
                             },
-                            "name": {
-                              "type": "string"
-                            },
-                            "recommendations": {
+                            "reviews": {
                               "type": "object",
                               "properties": {
                                 "data": {
@@ -2480,6 +2483,12 @@
                                   }
                                 }
                               }
+                            },
+                            "title": {
+                              "type": "string"
+                            },
+                            "title_slug": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -2686,7 +2695,7 @@
           }
         },
         "tags": [
-          "Tag"
+          "Recommendation"
         ],
         "parameters": [
           {
@@ -2700,7 +2709,7 @@
             }
           }
         ],
-        "operationId": "get/tags/{id}"
+        "operationId": "get/recommendations/{id}"
       },
       "put": {
         "responses": {
@@ -2719,7 +2728,7 @@
                         "attributes": {
                           "type": "object",
                           "properties": {
-                            "reviews": {
+                            "tags": {
                               "type": "object",
                               "properties": {
                                 "data": {
@@ -2733,68 +2742,7 @@
                                       "attributes": {
                                         "type": "object",
                                         "properties": {
-                                          "title": {
-                                            "type": "string"
-                                          },
-                                          "gadget_name": {
-                                            "type": "string"
-                                          },
-                                          "overview_description": {
-                                            "type": "string"
-                                          },
-                                          "desain_description": {
-                                            "type": "string"
-                                          },
-                                          "performa_description": {
-                                            "type": "string"
-                                          },
-                                          "layar_description": {
-                                            "type": "string"
-                                          },
-                                          "baterai_description": {
-                                            "type": "string"
-                                          },
-                                          "konektivitas_description": {
-                                            "type": "string"
-                                          },
-                                          "kesimpulan_description": {
-                                            "type": "string"
-                                          },
-                                          "price": {
-                                            "type": "number",
-                                            "format": "float"
-                                          },
-                                          "shopee_links": {
-                                            "type": "string"
-                                          },
-                                          "another_links": {
-                                            "type": "string"
-                                          },
-                                          "rating_description": {
-                                            "type": "string"
-                                          },
-                                          "pros": {
-                                            "type": "string"
-                                          },
-                                          "cons": {
-                                            "type": "string"
-                                          },
-                                          "rating_desain": {
-                                            "type": "integer"
-                                          },
-                                          "rating_performa": {
-                                            "type": "integer"
-                                          },
-                                          "rating_layar": {
-                                            "type": "integer"
-                                          },
-                                          "rating_konektivitas": {
-                                            "type": "integer"
-                                          },
-                                          "rating_penyimpanan": {
-                                            "type": "integer"
-                                          },
-                                          "tags": {
+                                          "reviews": {
                                             "type": "object",
                                             "properties": {
                                               "data": {
@@ -2808,7 +2756,68 @@
                                                     "attributes": {
                                                       "type": "object",
                                                       "properties": {
-                                                        "reviews": {
+                                                        "title": {
+                                                          "type": "string"
+                                                        },
+                                                        "gadget_name": {
+                                                          "type": "string"
+                                                        },
+                                                        "overview_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "desain_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "performa_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "layar_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "baterai_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "konektivitas_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "kesimpulan_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "price": {
+                                                          "type": "number",
+                                                          "format": "float"
+                                                        },
+                                                        "shopee_links": {
+                                                          "type": "string"
+                                                        },
+                                                        "another_links": {
+                                                          "type": "string"
+                                                        },
+                                                        "rating_description": {
+                                                          "type": "string"
+                                                        },
+                                                        "pros": {
+                                                          "type": "string"
+                                                        },
+                                                        "cons": {
+                                                          "type": "string"
+                                                        },
+                                                        "rating_desain": {
+                                                          "type": "integer"
+                                                        },
+                                                        "rating_performa": {
+                                                          "type": "integer"
+                                                        },
+                                                        "rating_layar": {
+                                                          "type": "integer"
+                                                        },
+                                                        "rating_konektivitas": {
+                                                          "type": "integer"
+                                                        },
+                                                        "rating_penyimpanan": {
+                                                          "type": "integer"
+                                                        },
+                                                        "tags": {
                                                           "type": "object",
                                                           "properties": {
                                                             "data": {
@@ -2828,7 +2837,7 @@
                                                             }
                                                           }
                                                         },
-                                                        "name": {
+                                                        "title_slug": {
                                                           "type": "string"
                                                         },
                                                         "recommendations": {
@@ -3248,7 +3257,7 @@
                                               }
                                             }
                                           },
-                                          "title_slug": {
+                                          "name": {
                                             "type": "string"
                                           },
                                           "recommendations": {
@@ -3324,10 +3333,7 @@
                                 }
                               }
                             },
-                            "name": {
-                              "type": "string"
-                            },
-                            "recommendations": {
+                            "reviews": {
                               "type": "object",
                               "properties": {
                                 "data": {
@@ -3346,6 +3352,12 @@
                                   }
                                 }
                               }
+                            },
+                            "title": {
+                              "type": "string"
+                            },
+                            "title_slug": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -3552,7 +3564,7 @@
           }
         },
         "tags": [
-          "Tag"
+          "Recommendation"
         ],
         "parameters": [
           {
@@ -3566,7 +3578,7 @@
             }
           }
         ],
-        "operationId": "put/tags/{id}",
+        "operationId": "put/recommendations/{id}",
         "requestBody": {
           "required": true,
           "content": {
@@ -3576,6 +3588,20 @@
                   "data": {
                     "type": "object",
                     "properties": {
+                      "tags": {
+                        "type": "array",
+                        "items": {
+                          "oneOf": [
+                            {
+                              "type": "integer"
+                            },
+                            {
+                              "type": "string"
+                            }
+                          ],
+                          "example": "string or id"
+                        }
+                      },
                       "reviews": {
                         "type": "array",
                         "items": {
@@ -3590,22 +3616,11 @@
                           "example": "string or id"
                         }
                       },
-                      "name": {
+                      "title": {
                         "type": "string"
                       },
-                      "recommendations": {
-                        "type": "array",
-                        "items": {
-                          "oneOf": [
-                            {
-                              "type": "integer"
-                            },
-                            {
-                              "type": "string"
-                            }
-                          ],
-                          "example": "string or id"
-                        }
+                      "title_slug": {
+                        "type": "string"
                       },
                       "createdAt": {
                         "type": "string",
@@ -3809,7 +3824,7 @@
           }
         },
         "tags": [
-          "Tag"
+          "Recommendation"
         ],
         "parameters": [
           {
@@ -3823,7 +3838,7 @@
             }
           }
         ],
-        "operationId": "delete/tags/{id}"
+        "operationId": "delete/recommendations/{id}"
       }
     }
   }

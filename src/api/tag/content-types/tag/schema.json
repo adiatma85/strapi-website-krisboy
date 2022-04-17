@@ -4,7 +4,8 @@
   "info": {
     "singularName": "tag",
     "pluralName": "tags",
-    "displayName": "Tag"
+    "displayName": "Tag",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,8 +20,13 @@
     },
     "name": {
       "type": "string",
-      "required": true,
-      "regex": "/^[A-Za-z]+$/"
+      "required": true
+    },
+    "recommendations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::recommendation.recommendation",
+      "mappedBy": "tags"
     }
   }
 }

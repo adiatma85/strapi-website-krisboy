@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recommendations",
+  "info": {
+    "singularName": "recommendation",
+    "pluralName": "recommendations",
+    "displayName": "Recommendation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "recommendations"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::review.review",
+      "inversedBy": "recommendations"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "title_slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}
