@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_review_pros_cons_review_pros_and_cons",
+  "info": {
+    "displayName": "Pros",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "caption": {
+      "type": "string"
+    }
+  }
+}

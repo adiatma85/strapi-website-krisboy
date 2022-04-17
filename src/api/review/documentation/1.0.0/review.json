@@ -60,12 +60,6 @@
                               "rating_description": {
                                 "type": "string"
                               },
-                              "pros": {
-                                "type": "string"
-                              },
-                              "cons": {
-                                "type": "string"
-                              },
                               "rating_desain": {
                                 "type": "integer"
                               },
@@ -147,12 +141,6 @@
                                                             "type": "string"
                                                           },
                                                           "rating_description": {
-                                                            "type": "string"
-                                                          },
-                                                          "pros": {
-                                                            "type": "string"
-                                                          },
-                                                          "cons": {
                                                             "type": "string"
                                                           },
                                                           "rating_desain": {
@@ -557,6 +545,48 @@
                                                               }
                                                             }
                                                           },
+                                                          "pros": {
+                                                            "type": "array",
+                                                            "items": {
+                                                              "anyOf": [
+                                                                {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "id": {
+                                                                      "type": "string"
+                                                                    },
+                                                                    "__component": {
+                                                                      "type": "string"
+                                                                    },
+                                                                    "caption": {
+                                                                      "type": "string"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              ]
+                                                            }
+                                                          },
+                                                          "cons": {
+                                                            "type": "array",
+                                                            "items": {
+                                                              "anyOf": [
+                                                                {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "id": {
+                                                                      "type": "string"
+                                                                    },
+                                                                    "__component": {
+                                                                      "type": "string"
+                                                                    },
+                                                                    "caption": {
+                                                                      "type": "string"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              ]
+                                                            }
+                                                          },
                                                           "createdAt": {
                                                             "type": "string",
                                                             "format": "date-time"
@@ -707,6 +737,48 @@
                                       }
                                     }
                                   }
+                                }
+                              },
+                              "pros": {
+                                "type": "array",
+                                "items": {
+                                  "anyOf": [
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "id": {
+                                          "type": "string"
+                                        },
+                                        "__component": {
+                                          "type": "string"
+                                        },
+                                        "caption": {
+                                          "type": "string"
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              "cons": {
+                                "type": "array",
+                                "items": {
+                                  "anyOf": [
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "id": {
+                                          "type": "string"
+                                        },
+                                        "__component": {
+                                          "type": "string"
+                                        },
+                                        "caption": {
+                                          "type": "string"
+                                        }
+                                      }
+                                    }
+                                  ]
                                 }
                               },
                               "createdAt": {
@@ -1078,12 +1150,6 @@
                             "rating_description": {
                               "type": "string"
                             },
-                            "pros": {
-                              "type": "string"
-                            },
-                            "cons": {
-                              "type": "string"
-                            },
                             "rating_desain": {
                               "type": "integer"
                             },
@@ -1165,12 +1231,6 @@
                                                           "type": "string"
                                                         },
                                                         "rating_description": {
-                                                          "type": "string"
-                                                        },
-                                                        "pros": {
-                                                          "type": "string"
-                                                        },
-                                                        "cons": {
                                                           "type": "string"
                                                         },
                                                         "rating_desain": {
@@ -1575,6 +1635,48 @@
                                                             }
                                                           }
                                                         },
+                                                        "pros": {
+                                                          "type": "array",
+                                                          "items": {
+                                                            "anyOf": [
+                                                              {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                  "id": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "__component": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "caption": {
+                                                                    "type": "string"
+                                                                  }
+                                                                }
+                                                              }
+                                                            ]
+                                                          }
+                                                        },
+                                                        "cons": {
+                                                          "type": "array",
+                                                          "items": {
+                                                            "anyOf": [
+                                                              {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                  "id": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "__component": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "caption": {
+                                                                    "type": "string"
+                                                                  }
+                                                                }
+                                                              }
+                                                            ]
+                                                          }
+                                                        },
                                                         "createdAt": {
                                                           "type": "string",
                                                           "format": "date-time"
@@ -1725,6 +1827,48 @@
                                     }
                                   }
                                 }
+                              }
+                            },
+                            "pros": {
+                              "type": "array",
+                              "items": {
+                                "anyOf": [
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "__component": {
+                                        "type": "string"
+                                      },
+                                      "caption": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "cons": {
+                              "type": "array",
+                              "items": {
+                                "anyOf": [
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "__component": {
+                                        "type": "string"
+                                      },
+                                      "caption": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                ]
                               }
                             },
                             "createdAt": {
@@ -1970,12 +2114,6 @@
                       "rating_description": {
                         "type": "string"
                       },
-                      "pros": {
-                        "type": "string"
-                      },
-                      "cons": {
-                        "type": "string"
-                      },
                       "rating_desain": {
                         "type": "integer"
                       },
@@ -2056,12 +2194,6 @@
                               "type": "string"
                             },
                             "rating_description": {
-                              "type": "string"
-                            },
-                            "pros": {
-                              "type": "string"
-                            },
-                            "cons": {
                               "type": "string"
                             },
                             "rating_desain": {
@@ -2145,12 +2277,6 @@
                                                           "type": "string"
                                                         },
                                                         "rating_description": {
-                                                          "type": "string"
-                                                        },
-                                                        "pros": {
-                                                          "type": "string"
-                                                        },
-                                                        "cons": {
                                                           "type": "string"
                                                         },
                                                         "rating_desain": {
@@ -2555,6 +2681,48 @@
                                                             }
                                                           }
                                                         },
+                                                        "pros": {
+                                                          "type": "array",
+                                                          "items": {
+                                                            "anyOf": [
+                                                              {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                  "id": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "__component": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "caption": {
+                                                                    "type": "string"
+                                                                  }
+                                                                }
+                                                              }
+                                                            ]
+                                                          }
+                                                        },
+                                                        "cons": {
+                                                          "type": "array",
+                                                          "items": {
+                                                            "anyOf": [
+                                                              {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                  "id": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "__component": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "caption": {
+                                                                    "type": "string"
+                                                                  }
+                                                                }
+                                                              }
+                                                            ]
+                                                          }
+                                                        },
                                                         "createdAt": {
                                                           "type": "string",
                                                           "format": "date-time"
@@ -2705,6 +2873,48 @@
                                     }
                                   }
                                 }
+                              }
+                            },
+                            "pros": {
+                              "type": "array",
+                              "items": {
+                                "anyOf": [
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "__component": {
+                                        "type": "string"
+                                      },
+                                      "caption": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "cons": {
+                              "type": "array",
+                              "items": {
+                                "anyOf": [
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "__component": {
+                                        "type": "string"
+                                      },
+                                      "caption": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                ]
                               }
                             },
                             "createdAt": {
@@ -2985,12 +3195,6 @@
                             "rating_description": {
                               "type": "string"
                             },
-                            "pros": {
-                              "type": "string"
-                            },
-                            "cons": {
-                              "type": "string"
-                            },
                             "rating_desain": {
                               "type": "integer"
                             },
@@ -3072,12 +3276,6 @@
                                                           "type": "string"
                                                         },
                                                         "rating_description": {
-                                                          "type": "string"
-                                                        },
-                                                        "pros": {
-                                                          "type": "string"
-                                                        },
-                                                        "cons": {
                                                           "type": "string"
                                                         },
                                                         "rating_desain": {
@@ -3482,6 +3680,48 @@
                                                             }
                                                           }
                                                         },
+                                                        "pros": {
+                                                          "type": "array",
+                                                          "items": {
+                                                            "anyOf": [
+                                                              {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                  "id": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "__component": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "caption": {
+                                                                    "type": "string"
+                                                                  }
+                                                                }
+                                                              }
+                                                            ]
+                                                          }
+                                                        },
+                                                        "cons": {
+                                                          "type": "array",
+                                                          "items": {
+                                                            "anyOf": [
+                                                              {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                  "id": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "__component": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "caption": {
+                                                                    "type": "string"
+                                                                  }
+                                                                }
+                                                              }
+                                                            ]
+                                                          }
+                                                        },
                                                         "createdAt": {
                                                           "type": "string",
                                                           "format": "date-time"
@@ -3632,6 +3872,48 @@
                                     }
                                   }
                                 }
+                              }
+                            },
+                            "pros": {
+                              "type": "array",
+                              "items": {
+                                "anyOf": [
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "__component": {
+                                        "type": "string"
+                                      },
+                                      "caption": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "cons": {
+                              "type": "array",
+                              "items": {
+                                "anyOf": [
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string"
+                                      },
+                                      "__component": {
+                                        "type": "string"
+                                      },
+                                      "caption": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                ]
                               }
                             },
                             "createdAt": {
@@ -3903,12 +4185,6 @@
                       "rating_description": {
                         "type": "string"
                       },
-                      "pros": {
-                        "type": "string"
-                      },
-                      "cons": {
-                        "type": "string"
-                      },
                       "rating_desain": {
                         "type": "integer"
                       },
@@ -3953,6 +4229,42 @@
                             }
                           ],
                           "example": "string or id"
+                        }
+                      },
+                      "pros": {
+                        "type": "array",
+                        "items": {
+                          "anyOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "__component": {
+                                  "type": "string"
+                                },
+                                "caption": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "cons": {
+                        "type": "array",
+                        "items": {
+                          "anyOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "__component": {
+                                  "type": "string"
+                                },
+                                "caption": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          ]
                         }
                       },
                       "createdAt": {

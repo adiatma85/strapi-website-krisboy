@@ -63,14 +63,6 @@
       "type": "text",
       "required": true
     },
-    "pros": {
-      "type": "text",
-      "required": true
-    },
-    "cons": {
-      "type": "text",
-      "required": true
-    },
     "rating_desain": {
       "type": "integer",
       "default": 0,
@@ -111,6 +103,18 @@
       "relation": "manyToMany",
       "target": "api::recommendation.recommendation",
       "mappedBy": "reviews"
+    },
+    "pros": {
+      "type": "dynamiczone",
+      "components": [
+        "review-pros-cons.review-pros-and-cons"
+      ]
+    },
+    "cons": {
+      "type": "dynamiczone",
+      "components": [
+        "review-pros-cons.cons"
+      ]
     }
   }
 }
