@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_review_pros_cons_cons",
+  "info": {
+    "displayName": "Cons",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "caption": {
+      "type": "string"
+    }
+  }
+}

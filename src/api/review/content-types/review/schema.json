@@ -1,0 +1,120 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "singularName": "review",
+    "pluralName": "reviews",
+    "displayName": "Review",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "gadget_name": {
+      "type": "string",
+      "required": true
+    },
+    "overview_description": {
+      "type": "richtext",
+      "required": true
+    },
+    "desain_description": {
+      "type": "richtext",
+      "required": true
+    },
+    "performa_description": {
+      "type": "richtext"
+    },
+    "layar_description": {
+      "type": "richtext"
+    },
+    "baterai_description": {
+      "type": "richtext"
+    },
+    "konektivitas_description": {
+      "type": "richtext"
+    },
+    "kesimpulan_description": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "decimal",
+      "required": true,
+      "default": 0,
+      "private": true
+    },
+    "shopee_links": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "another_links": {
+      "type": "string",
+      "required": true
+    },
+    "rating_description": {
+      "type": "text",
+      "required": true
+    },
+    "rating_desain": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    },
+    "rating_performa": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    },
+    "rating_layar": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    },
+    "rating_konektivitas": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "rating_penyimpanan": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "reviews"
+    },
+    "title_slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "recommendations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::recommendation.recommendation",
+      "mappedBy": "reviews"
+    },
+    "pros": {
+      "type": "dynamiczone",
+      "components": [
+        "review-pros-cons.review-pros-and-cons"
+      ]
+    },
+    "cons": {
+      "type": "dynamiczone",
+      "components": [
+        "review-pros-cons.cons"
+      ]
+    }
+  }
+}
