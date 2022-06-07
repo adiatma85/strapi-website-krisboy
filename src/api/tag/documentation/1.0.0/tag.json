@@ -160,26 +160,6 @@
                                                                             }
                                                                           }
                                                                         },
-                                                                        "reviews": {
-                                                                          "type": "object",
-                                                                          "properties": {
-                                                                            "data": {
-                                                                              "type": "array",
-                                                                              "items": {
-                                                                                "type": "object",
-                                                                                "properties": {
-                                                                                  "id": {
-                                                                                    "type": "string"
-                                                                                  },
-                                                                                  "attributes": {
-                                                                                    "type": "object",
-                                                                                    "properties": {}
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        },
                                                                         "title": {
                                                                           "type": "string"
                                                                         },
@@ -545,26 +525,6 @@
                                             },
                                             "title_slug": {
                                               "type": "string"
-                                            },
-                                            "recommendations": {
-                                              "type": "object",
-                                              "properties": {
-                                                "data": {
-                                                  "type": "array",
-                                                  "items": {
-                                                    "type": "object",
-                                                    "properties": {
-                                                      "id": {
-                                                        "type": "string"
-                                                      },
-                                                      "attributes": {
-                                                        "type": "object",
-                                                        "properties": {}
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
                                             },
                                             "pros": {
                                               "type": "array",
@@ -1153,26 +1113,6 @@
                                                                           }
                                                                         }
                                                                       },
-                                                                      "reviews": {
-                                                                        "type": "object",
-                                                                        "properties": {
-                                                                          "data": {
-                                                                            "type": "array",
-                                                                            "items": {
-                                                                              "type": "object",
-                                                                              "properties": {
-                                                                                "id": {
-                                                                                  "type": "string"
-                                                                                },
-                                                                                "attributes": {
-                                                                                  "type": "object",
-                                                                                  "properties": {}
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      },
                                                                       "title": {
                                                                         "type": "string"
                                                                       },
@@ -1538,26 +1478,6 @@
                                           },
                                           "title_slug": {
                                             "type": "string"
-                                          },
-                                          "recommendations": {
-                                            "type": "object",
-                                            "properties": {
-                                              "data": {
-                                                "type": "array",
-                                                "items": {
-                                                  "type": "object",
-                                                  "properties": {
-                                                    "id": {
-                                                      "type": "string"
-                                                    },
-                                                    "attributes": {
-                                                      "type": "object",
-                                                      "properties": {}
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
                                           },
                                           "pros": {
                                             "type": "array",
@@ -2065,26 +1985,6 @@
                                                                           }
                                                                         }
                                                                       },
-                                                                      "reviews": {
-                                                                        "type": "object",
-                                                                        "properties": {
-                                                                          "data": {
-                                                                            "type": "array",
-                                                                            "items": {
-                                                                              "type": "object",
-                                                                              "properties": {
-                                                                                "id": {
-                                                                                  "type": "string"
-                                                                                },
-                                                                                "attributes": {
-                                                                                  "type": "object",
-                                                                                  "properties": {}
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      },
                                                                       "title": {
                                                                         "type": "string"
                                                                       },
@@ -2450,26 +2350,6 @@
                                           },
                                           "title_slug": {
                                             "type": "string"
-                                          },
-                                          "recommendations": {
-                                            "type": "object",
-                                            "properties": {
-                                              "data": {
-                                                "type": "array",
-                                                "items": {
-                                                  "type": "object",
-                                                  "properties": {
-                                                    "id": {
-                                                      "type": "string"
-                                                    },
-                                                    "attributes": {
-                                                      "type": "object",
-                                                      "properties": {}
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
                                           },
                                           "pros": {
                                             "type": "array",
@@ -2967,26 +2847,6 @@
                                                                           }
                                                                         }
                                                                       },
-                                                                      "reviews": {
-                                                                        "type": "object",
-                                                                        "properties": {
-                                                                          "data": {
-                                                                            "type": "array",
-                                                                            "items": {
-                                                                              "type": "object",
-                                                                              "properties": {
-                                                                                "id": {
-                                                                                  "type": "string"
-                                                                                },
-                                                                                "attributes": {
-                                                                                  "type": "object",
-                                                                                  "properties": {}
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      },
                                                                       "title": {
                                                                         "type": "string"
                                                                       },
@@ -3352,26 +3212,6 @@
                                           },
                                           "title_slug": {
                                             "type": "string"
-                                          },
-                                          "recommendations": {
-                                            "type": "object",
-                                            "properties": {
-                                              "data": {
-                                                "type": "array",
-                                                "items": {
-                                                  "type": "object",
-                                                  "properties": {
-                                                    "id": {
-                                                      "type": "string"
-                                                    },
-                                                    "attributes": {
-                                                      "type": "object",
-                                                      "properties": {}
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
                                           },
                                           "pros": {
                                             "type": "array",

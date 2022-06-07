@@ -98,12 +98,6 @@
       "type": "uid",
       "targetField": "title"
     },
-    "recommendations": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::recommendation.recommendation",
-      "mappedBy": "reviews"
-    },
     "pros": {
       "type": "dynamiczone",
       "components": [

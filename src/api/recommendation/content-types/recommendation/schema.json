@@ -18,12 +18,6 @@
       "target": "api::tag.tag",
       "inversedBy": "recommendations"
     },
-    "reviews": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::review.review",
-      "inversedBy": "recommendations"
-    },
     "title": {
       "type": "string",
       "required": true
