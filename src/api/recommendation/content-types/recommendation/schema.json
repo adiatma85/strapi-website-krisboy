@@ -25,6 +25,14 @@
     "title_slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recomendation-item.item"
+    },
+    "Overview": {
+      "type": "richtext"
     }
   }
 }
