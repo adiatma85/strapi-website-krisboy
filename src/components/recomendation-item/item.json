@@ -20,6 +20,38 @@
         "videos",
         "audios"
       ]
+    },
+    "price": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "display": {
+      "type": "string"
+    },
+    "processor": {
+      "type": "string"
+    },
+    "graphic": {
+      "type": "string"
+    },
+    "storage": {
+      "type": "string"
+    },
+    "pros": {
+      "type": "component",
+      "repeatable": true,
+      "component": "review-pros-cons.review-pros-and-cons"
+    },
+    "cons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "review-pros-cons.cons"
+    },
+    "shopee_links": {
+      "type": "string"
+    },
+    "another_links": {
+      "type": "string"
     }
   }
 }
