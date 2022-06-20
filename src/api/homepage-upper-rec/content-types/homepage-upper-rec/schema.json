@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepage_upper_recs",
+  "info": {
+    "singularName": "homepage-upper-rec",
+    "pluralName": "homepage-upper-recs",
+    "displayName": "Homepage upper rec"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "recommendations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recommendation.recommendation"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepage_lower_recs",
+  "info": {
+    "singularName": "homepage-lower-rec",
+    "pluralName": "homepage-lower-recs",
+    "displayName": "Homepage lower rec"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review"
+    }
+  }
+}
