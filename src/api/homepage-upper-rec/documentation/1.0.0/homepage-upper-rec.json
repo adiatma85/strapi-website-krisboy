@@ -51,6 +51,29 @@
                                                       "attributes": {
                                                         "type": "object",
                                                         "properties": {
+                                                          "name": {
+                                                            "type": "string"
+                                                          },
+                                                          "recommendations": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                              "data": {
+                                                                "type": "array",
+                                                                "items": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "id": {
+                                                                      "type": "string"
+                                                                    },
+                                                                    "attributes": {
+                                                                      "type": "object",
+                                                                      "properties": {}
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          },
                                                           "reviews": {
                                                             "type": "object",
                                                             "properties": {
@@ -119,26 +142,6 @@
                                                                         },
                                                                         "rating_penyimpanan": {
                                                                           "type": "integer"
-                                                                        },
-                                                                        "tags": {
-                                                                          "type": "object",
-                                                                          "properties": {
-                                                                            "data": {
-                                                                              "type": "array",
-                                                                              "items": {
-                                                                                "type": "object",
-                                                                                "properties": {
-                                                                                  "id": {
-                                                                                    "type": "string"
-                                                                                  },
-                                                                                  "attributes": {
-                                                                                    "type": "object",
-                                                                                    "properties": {}
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
                                                                         },
                                                                         "title_slug": {
                                                                           "type": "string"
@@ -2050,6 +2053,29 @@
                                                                             }
                                                                           }
                                                                         },
+                                                                        "brand": {
+                                                                          "type": "string"
+                                                                        },
+                                                                        "tags": {
+                                                                          "type": "object",
+                                                                          "properties": {
+                                                                            "data": {
+                                                                              "type": "array",
+                                                                              "items": {
+                                                                                "type": "object",
+                                                                                "properties": {
+                                                                                  "id": {
+                                                                                    "type": "string"
+                                                                                  },
+                                                                                  "attributes": {
+                                                                                    "type": "object",
+                                                                                    "properties": {}
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        },
                                                                         "createdAt": {
                                                                           "type": "string",
                                                                           "format": "date-time"
@@ -2348,29 +2374,6 @@
                                                                           }
                                                                         }
                                                                       }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          },
-                                                          "name": {
-                                                            "type": "string"
-                                                          },
-                                                          "recommendations": {
-                                                            "type": "object",
-                                                            "properties": {
-                                                              "data": {
-                                                                "type": "array",
-                                                                "items": {
-                                                                  "type": "object",
-                                                                  "properties": {
-                                                                    "id": {
-                                                                      "type": "string"
-                                                                    },
-                                                                    "attributes": {
-                                                                      "type": "object",
-                                                                      "properties": {}
                                                                     }
                                                                   }
                                                                 }
@@ -3290,6 +3293,29 @@
                                                     "attributes": {
                                                       "type": "object",
                                                       "properties": {
+                                                        "name": {
+                                                          "type": "string"
+                                                        },
+                                                        "recommendations": {
+                                                          "type": "object",
+                                                          "properties": {
+                                                            "data": {
+                                                              "type": "array",
+                                                              "items": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                  "id": {
+                                                                    "type": "string"
+                                                                  },
+                                                                  "attributes": {
+                                                                    "type": "object",
+                                                                    "properties": {}
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        },
                                                         "reviews": {
                                                           "type": "object",
                                                           "properties": {
@@ -3358,26 +3384,6 @@
                                                                       },
                                                                       "rating_penyimpanan": {
                                                                         "type": "integer"
-                                                                      },
-                                                                      "tags": {
-                                                                        "type": "object",
-                                                                        "properties": {
-                                                                          "data": {
-                                                                            "type": "array",
-                                                                            "items": {
-                                                                              "type": "object",
-                                                                              "properties": {
-                                                                                "id": {
-                                                                                  "type": "string"
-                                                                                },
-                                                                                "attributes": {
-                                                                                  "type": "object",
-                                                                                  "properties": {}
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
                                                                       },
                                                                       "title_slug": {
                                                                         "type": "string"
@@ -5289,6 +5295,29 @@
                                                                           }
                                                                         }
                                                                       },
+                                                                      "brand": {
+                                                                        "type": "string"
+                                                                      },
+                                                                      "tags": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                          "data": {
+                                                                            "type": "array",
+                                                                            "items": {
+                                                                              "type": "object",
+                                                                              "properties": {
+                                                                                "id": {
+                                                                                  "type": "string"
+                                                                                },
+                                                                                "attributes": {
+                                                                                  "type": "object",
+                                                                                  "properties": {}
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      },
                                                                       "createdAt": {
                                                                         "type": "string",
                                                                         "format": "date-time"
@@ -5587,29 +5616,6 @@
                                                                         }
                                                                       }
                                                                     }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        },
-                                                        "name": {
-                                                          "type": "string"
-                                                        },
-                                                        "recommendations": {
-                                                          "type": "object",
-                                                          "properties": {
-                                                            "data": {
-                                                              "type": "array",
-                                                              "items": {
-                                                                "type": "object",
-                                                                "properties": {
-                                                                  "id": {
-                                                                    "type": "string"
-                                                                  },
-                                                                  "attributes": {
-                                                                    "type": "object",
-                                                                    "properties": {}
                                                                   }
                                                                 }
                                                               }

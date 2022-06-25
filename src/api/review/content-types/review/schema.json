@@ -88,12 +88,6 @@
       "default": 0,
       "required": true
     },
-    "tags": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::tag.tag",
-      "inversedBy": "reviews"
-    },
     "title_slug": {
       "type": "uid",
       "targetField": "title"
@@ -164,6 +158,16 @@
         "videos",
         "audios"
       ]
+    },
+    "brand": {
+      "type": "string",
+      "required": true
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "reviews"
     }
   }
 }

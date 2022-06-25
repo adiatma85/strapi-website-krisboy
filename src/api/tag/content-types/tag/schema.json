@@ -12,12 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "reviews": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::review.review",
-      "mappedBy": "tags"
-    },
     "name": {
       "type": "string",
       "required": true
@@ -27,6 +21,12 @@
       "relation": "manyToMany",
       "target": "api::recommendation.recommendation",
       "mappedBy": "tags"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::review.review",
+      "inversedBy": "tags"
     }
   }
 }
